@@ -2,6 +2,10 @@ from Tkinter import *
 import RPi.GPIO as GPIO
 import time
 
+"""
+Controls the servo motor
+"""
+
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.OUT)
 pwm = GPIO.PWM(18, 100)
