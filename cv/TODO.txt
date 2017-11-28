@@ -1,5 +1,5 @@
-Get drone to detect ArUca tag
-Get drone to switch to autopilot using dronekit when it detects ArUca tag
-Convert pixel coordinates of ArUca tag into coordinates that dronekit can use
+Get drone to detect Aruco tag
+Get drone to switch to autopilot using dronekit when it detects Aruco tag
+Convert pixel coordinates of Aruco tag into coordinates that dronekit can use
 
 
