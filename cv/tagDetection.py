@@ -12,7 +12,7 @@ aruco_dict = g.generate()
 parameters = aruco.DetectorParameters_create()
 while True:
     # take image and load it in OpenCV
-    subprocess.call(["fswebcam", "image.jpg"])
+    subprocess.call(["fswebcam", "-S", "2", "image.jpg"])
     img = cv2.imread("./image.jpg") 
 
     # find corners and draw circle around center if aruco tag detected
