@@ -11,7 +11,7 @@ def generate():
     d = aruco.Dictionary_get(aruco.DICT_4X4_100)
 
     # display the aruco tag
-    img = aruco.drawMarker(d, 1, 2000)
+    img = aruco.drawMarker(d, 1, 400)
     cv2.imwrite("../img/aruco.jpg", img)
 #cv2.imshow('Aruco tag', img)
 
@@ -22,3 +22,4 @@ def generate():
         cv2.destroyAllWindows()
         """
     return d
+
