@@ -12,8 +12,8 @@ print(d)
 
 # display the aruco tag
 img = aruco.drawMarker(d, 2, 700)
-cv2.imwrite("testImg.jpg", img)
-cv2.imshow('frame', img)
+cv2.imwrite("../img/aruco.jpg", img)
+cv2.imshow('Aruco tag', img)
 
 # clean up
 cv2.waitkey(0)
