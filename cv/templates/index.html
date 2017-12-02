@@ -8,8 +8,8 @@
   <meta name="description" content="BevDrone Webcam">
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script>
-    var timeoutPeriod = 1000;
-    var imageURI = '../image.jpg';
+    var timeoutPeriod = 100;
+    var imageURI = '../static/image.jpg';
     var x=0, y=0;
     var img = new Image();
     img.onload = function() {
@@ -19,7 +19,7 @@
         setTimeout(timedRefresh, timeoutPeriod);
     };
     function timedRefresh() {
-        img.src = imageURI;
+        img.src = imageURI + '?d=' + Date.now();
     }
     // Sending start command to server
     $(document).ready(function(){
